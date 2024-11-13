@@ -1,0 +1,45 @@
+ /* ------------------------------- */
+/*----- Configurações Básicas -----*/
+/* --------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+ /* ------------------------------- */
+/*------------- Hero Header --------*/
+/* --------------------------------- */
+
+
+/* Define o estilo do banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparência para o fundo do texto */
+    padding: 20px;
+    border-radius: 8px;
+}
