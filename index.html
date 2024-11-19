@@ -4,54 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cafeteria</title>
+
+    <!-- Link para o CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Para utilização do bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="navbar-logo">
+        <a href="#"><img src="./css/img/logo.png" alt="Logo" class="logo"></a>
+    </div>
+
+    <!-- Opções -->
+    <ul class="navbar-menu">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Espaço</a></li>
+        <li><a href="#">Nossos Grãos</a></li>
+        <li><a href="#">Equipe</a></li>
+        <li><a href="#">Localização</a></li>
+    </ul>
+  </nav>
+
     <!-- Início do Header -->
     <header>
+        <h1>Bem-vindo à Nossa Cafeteria!</h1>
+        <p>O lugar perfeito para apreciar um café especial</p>
         <!-- Banner da Cafeteria -->
-        <div class="banner">
-            <img src="./css/img/img01.jpg" alt="Banner da Cafeteria">
-            <div class="banner-texto">
-                <h1>Bem-vindo à Nossa Cafeteria!</h1>
-                <p>O lugar perfeito para apreciar um café especial</p>
+        <div id="carouselCardapio" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselCardapio" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCardapio" data-slide-to="1"></li>
+            <li data-target="#carouselCardapio" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./css/img/img01.jpg" alt="Primeiro Slide">
             </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./css/img/img02.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./css/img/img03.jpg" alt="Terceiro Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselCardapio" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCardapio" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
     </header>
+
     <!-- Conteúdo principal -->
     <main>
-        <p>Conteúdo do site aqui...</p>
-
-        <div id="carouselCardapio" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselCardapio" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselCardapio" data-slide-to="1"></li>
-              <li data-target="#carouselCardapio" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./css/img/img01.jpg" alt="Primeiro Slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./css/img/img02.jpg" alt="Segundo Slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./css/img/img03.jpg" alt="Terceiro Slide">
-              </div>
+        <!-- Menu -->
+        <section>
+          <div class="item-menu">
+            <!-- Item 1 -->
+            <div class="item">
+                <img src="item1.jpg" alt="Item 1">
+                <div class="item-title">Item 1</div>
+                <div class="item-price">R$ 15,00</div>
+                <a href="#" class="item-button">Comprar</a>
             </div>
-            <a class="carousel-control-prev" href="#carouselCardapio" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselCardapio" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Próximo</span>
-            </a>
+            
+            <!-- Item 2 -->
+            <div class="item">
+                <img src="item2.jpg" alt="Item 2">
+                <div class="item-title">Item 2</div>
+                <div class="item-price">R$ 30,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="item">
+                <img src="item3.jpg" alt="Item 3">
+                <div class="item-title">Item 3</div>
+                <div class="item-price">R$ 25,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 4 -->
+            <div class="item">
+                <img src="item4.jpg" alt="Item 4">
+                <div class="item-title">Item 4</div>
+                <div class="item-price">R$ 8,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 5 -->
+            <div class="item">
+                <img src="item5.jpg" alt="Item 5">
+                <div class="item-title">Item 5</div>
+                <div class="item-price">R$ 18,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 6 -->
+            <div class="item">
+                <img src="item6.jpg" alt="Item 6">
+                <div class="item-title">Item 6</div>
+                <div class="item-price">R$ 10,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 7 -->
+            <div class="item">
+                <img src="item7.jpg" alt="Item 7">
+                <div class="item-title">Item 7</div>
+                <div class="item-price">R$ 15,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+            
+            <!-- Item 8 -->
+            <div class="item">
+                <img src="item8.jpg" alt="Item 8">
+                <div class="item-title">Item 8</div>
+                <div class="item-price">R$ 20,00</div>
+                <a href="#" class="item-button">Comprar</a>
+            </div>
+        </div>
+      </section>
+
+      <!--- Espaço ---->
+      <section>
+        <h2>Nosso Espaço</h2>
+        <img src="#" alt="Foto do local 1">
+        <img src="#" alt="Foto do local 2">
+        <img src="#" alt="Foto do local 3">
+        <img src="#" alt="Foto do local 4">
+        <p>Nosso espaço blablabla.....</p>
+
+        <h2>Espaço de Coworking</h2>
+        <img src="#" alt="Foto do coworking 1">
+        <img src="#" alt="Foto do coworking 2">
+        <img src="#" alt="Foto do coworking 3">
+        <img src="#" alt="Foto do coworking 4">
+        <p>Possuímos espaço para coworking....</p>
+      </section>
+
+      <!--- Nossos Grãos ---->
+      <section>
+        <h2>Nossos grãos</h2>
+
+        <!--- Grão 1 ---->
+          <div class="grãos">
+            <img src="#" alt="grão 1">
+            <div class="grão-title">Grão Arábico</div>
+            <div class="item-price">R$ 50,00</div>
+            <a href="#" class="item-button">Mais informações</a>
           </div>
+
+          <!--- Grão 2 ---->
+          <div class="grãos">
+            <img src="#" alt="grão 2">
+            <div class="grão-title">Grão Brasileiro Torra Média </div>
+            <div class="item-price">R$ 40,00</div>
+            <a href="#" class="item-button">Mais informações</a>
+          </div>
+
+          <!--- Grão 3 ---->
+          <div class="grãos">
+            <img src="#" alt="grão 3">
+            <div class="grão-title">Grão Bourbon</div>
+            <div class="item-price">R$ 60,00</div>
+            <a href="#" class="item-button">Mais informações</a>
+          </div>
+      </section>
     </main>
+    <footer>
         <div class="footer-bottom">
             <p>
                 Copyright &copy; 2024 - Sabor e Café. 
@@ -59,7 +186,7 @@
             </p>
         </div>
     </footer>
-    </div>
+
     <!-- Importação a biblioteca de ícones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
