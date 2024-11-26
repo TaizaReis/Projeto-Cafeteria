@@ -17,28 +17,35 @@ html {
     -webkit-tap-highlight-color: #000;
 }
 
-.navbar{
-    --bs-navbar-color: #dc3545;
+h1 {
+    font-family: "Josefin Sans", sans-serif;
 }
 
-.navbar-nav{
-    --bs-nav-link-color:#ff5733;
-}
-
-.nav-link {
-    color: #ff5733; 
-}
-
-:root {
-    --bs-nav-link-color: #ff5733; 
+/* Título do site */
+.navbar-brand {
+    font-family: "Bungee", sans-serif;
+    color: #f7d5a2;
+    margin-left: 15px;
 }
 
 body { 
-    background-color: #942525;
+    background-color: #ca170a;
 }
 
+/* Seções da navbar */
 .nav-link {
-    color:#ff5733;
+    color:#834a34;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    color:#FFF;
+}
+
+.nav-link:hover {
+    color: #f7d5a2;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav {
