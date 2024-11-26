@@ -17,60 +17,37 @@ html {
     -webkit-tap-highlight-color: #000;
 }
 
-body { 
-    background-color: #000;
+.navbar{
+    --bs-navbar-color: #dc3545;
 }
+
+.navbar-nav{
+    --bs-nav-link-color:#ff5733;
+}
+
+.nav-link {
+    color: #ff5733; 
+}
+
+:root {
+    --bs-nav-link-color: #ff5733; 
+}
+
+body { 
+    background-color: #942525;
+}
+
+.nav-link {
+    color:#ff5733;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Empurra os itens para a direita */
+  }
 
 /* ------------------------------- */
 /*------------- Hero Header --------*/
 /* --------------------------------- */
-
-/* Estilo para o logo no menu */
-.logo {
-    height: 50px;
-    max-width: 100%;
-}
-
-/* Estilo da Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000; /* Fundo preto */
-    padding: 15px 30px;
-    height: 60px;
-}
-
-/* Logo na Navbar */
-.navbar-logo {
-    display: flex;
-    align-items: center;
-}
-
-/* Estilo do Menu de Navegação */
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px; /* Espaçamento entre os itens do menu */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding padrão */
-}
-
-.navbar-menu li {
-    display: inline-block; /* Itens na mesma linha */
-}
-
-.navbar-menu a {
-    text-decoration: none;
-    color: #e0e0e0; /* Tom claro para o texto */
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-/* Efeito hover nos links */
-.navbar-menu a:hover {
-    color: #ffb84d; /* Tom de laranja claro ao passar o mouse */
-}
 
 /* Ajustes do carrossel */
 .carousel-inner {
