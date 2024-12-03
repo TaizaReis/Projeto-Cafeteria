@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cafeteria</title>
+    <!-- Adicionando Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Link para o Bootstrap 5 via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link para o CSS personalizado -->
@@ -12,11 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> 
-    <!-- Tirar / das imagens -->
 </head>
 
 <body>
@@ -160,12 +159,14 @@
       </section>
 
       <!--- Espaço ---->
-      <section id="espaco" class="sessão-espaco">
+      <section id="espaco" class="sessao-espaco">
         <h2>Nosso Espaço</h2>
-        <img src="./css/img/local-1.jpg" alt="Foto do local 1">
-        <img src="./css/img/local-2.jpg" alt="Foto do local 2">
-        <img src="./css/img/local-3.jpg" alt="Foto do local 3">
-        <img src="./css/img/local-4.jpg" alt="Foto do local 4">
+          <div class="imagens-espaco">
+            <img src="./css/img/local-1.jpg" alt="Foto do local 1">
+            <img src="./css/img/local-2.jpg" alt="Foto do local 2">
+            <img src="./css/img/local-3.jpg" alt="Foto do local 3">
+            <img src="./css/img/local-4.jpg" alt="Foto do local 4">
+          </div>
         <p>
           <strong>Nosso espaço é pensado para proporcionar uma experiência única e acolhedora.</strong>
            Em nossa cafeteria, o ambiente é cuidadosamente projetado para que você se sinta à vontade, 
@@ -260,44 +261,94 @@
       </section>
       
 
-      <!-- Equipe -->
-      <section id="equipe" class="sessao-equipe py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Nossa Equipe</h2>
-          <div class="row">
-            <!-- Membro 1 -->
-            <div class="col-md-4">
+      <!-- Inclua o link do Flag Icons -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!-- Equipe -->
+<section id="equipe" class="sessao-equipe">
+  <div class="container">
+      <h2 class="titulo">Nossa Equipe</h2>
+      <div class="row">
+          <!-- Membro 1 -->
+          <div class="col">
               <div class="card">
-                <img src="css/img/equipe-1.jpg" class="card-img-top" alt="Membro 1">
-                <div class="card-body">
-                  <h5 class="card-title">Membro 1</h5>
-                  <p class="card-text">Cargo 1</p>
-                </div>
+                  <img src="css/img/func01.jpg" class="card-img-top" alt="Membro 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Elias</h5>
+                      <p class="card-text">Barista-chefe</p>
+                      <div class="card-text">
+                          <strong>Grão preferido:</strong> 
+                          <img src="https://flagicons.lipis.dev/flags/4x3/co.svg" alt="Bandeira da Colômbia" width="20"> <!-- Bandeira da Colômbia -->
+                      </div>
+                      <div class="social-icons">
+                          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <!-- Membro 2 -->
-            <div class="col-md-4">
-              <div class="card">
-                <img src="css/img/equipe-2.jpg" class="card-img-top" alt="Membro 2">
-                <div class="card-body">
-                  <h5 class="card-title">Membro-2</h5>
-                  <p class="card-text">Cargo 2</p>
-                </div>
-              </div>
-            </div>
-            <!-- Membro 3 -->
-            <div class="col-md-4">
-              <div class="card">
-                <img src="css/img/equipe-3.jpg" class="card-img-top" alt="Membro 3">
-                <div class="card-body">
-                  <h5 class="card-title">Membro 3</h5>
-                  <p class="card-text">Cargo 3</p>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+          <!-- Membro 2 -->
+          <div class="col">
+              <div class="card">
+                  <img src="css/img/func02.jpg" class="card-img-top" alt="Membro 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Anna</h5>
+                      <p class="card-text">Barista Jr.</p>
+                      <div class="card-text">
+                          <strong>Grão preferido:</strong> 
+                          <img src="https://flagicons.lipis.dev/flags/4x3/et.svg" alt="Bandeira da Etiópia" width="20">
+                      </div>
+                      <div class="social-icons">
+                          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Membro 3 -->
+          <div class="col">
+              <div class="card">
+                  <img src="css/img/func03.jpg" class="card-img-top" alt="Membro 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Luam</h5>
+                      <p class="card-text">Especialista em Latte Design</p>
+                      <div class="card-text">
+                          <strong>Grão preferido:</strong> 
+                          <img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="Bandeira do Brasil" width="20"> <!-- Bandeira do Brasil -->
+                      </div>
+                      <div class="social-icons">
+                          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Membro 4 -->
+          <div class="col">
+              <div class="card">
+                  <img src="css/img/func04.jpg" class="card-img-top" alt="Membro 4">
+                  <div class="card-body">
+                      <h5 class="card-title">Júlia</h5>
+                      <p class="card-text">Barista e cozinheira</p>
+                      <div class="card-text">
+                          <strong>Grão preferido:</strong> 
+                          <img src="https://flagicons.lipis.dev/flags/4x3/et.svg" alt="Bandeira da Etiópia" width="20"> <!-- Bandeira da Etiópia -->
+                      </div>
+                      <div class="social-icons">
+                          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
 
       <!-- Sessão de Endereço e Localização -->
       <section id="localizacao" class="sessao-localizacao py-5 bg-light">

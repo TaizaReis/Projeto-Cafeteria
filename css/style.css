@@ -114,10 +114,11 @@ p{
 }
 
 /* Menu de itens */
-.sessão-menu h2 {font-family: 'Josefin Sans', sans-serif;
+.sessão-menu h2 {
+    font-family: 'Josefin Sans', sans-serif;
     padding: 15px;
     font-size: 2.5rem;
-    color: #ffb84d; /* Laranja claro */
+    color: #f7d5a2; 
     text-align: center;
 }
 
@@ -148,17 +149,17 @@ p{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ffb84d; /* Tom de laranja claro */
+    color: #f7d5a2; /* Tom de laranja claro */
 }
 
 .item-price {
-    color: #ffb84d; /* Tom de laranja claro */
+    color: #f7d5a2; /* Tom de laranja claro */
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .item-button {
-    background-color: #ff8c00; /* Botão em laranja mais forte */
+    background-color: #c8a166; /* Botão em laranja mais forte */
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -167,7 +168,8 @@ p{
 }
 
 .item-button:hover {
-    background-color: #ffb84d; /* Tom de laranja mais escuro no hover */
+    background-color: #f7d5a2; /* Tom de laranja mais escuro no hover */
+    transition: 0.3s ease, transform 0.3s ease;
 }
 
 /* ------------------------------- */
@@ -177,14 +179,14 @@ p{
 .sessao-espaco {
     background-color: #121212; /* Fundo escuro */
     padding: 60px 20px; /* Espaçamento interno */
-    text-align: center; /* Centralizar conteúdo */
 }
 
 .sessao-espaco h2 {
     font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
     font-size: 2.5rem;
-    color: #ffb84d; /* Laranja claro */
-    margin-bottom: 30px; /* Espaçamento inferior */
+    color: #f7d5a2; 
+    text-align: center;
 }
 
 .sessao-espaco p {
@@ -208,7 +210,7 @@ p{
 .sessao-coworking h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
-    color: #ffb84d; /* Laranja claro */
+    color: #f7d5a2; /* Laranja claro */
     margin-bottom: 30px; /* Espaçamento inferior */
 }
 
@@ -265,6 +267,94 @@ p{
     }
 }
 
+/* Estilos Gerais para a Seção da Equipe */
+#equipe {
+    background-color: #1c1c1c; /* Cor de fundo suave para a seção */
+    padding: 50px 0; /* Espaçamento interno para a seção */
+}
+
+.titulo {
+    text-align: center; /* Centraliza o título */
+    font-size: 2rem;
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+/* Estilos para os Cards */
+.card {
+    border: 1px solid #1c1c1c; /* Borda suave para o card */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que a imagem e o conteúdo não ultrapassem as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para o card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o efeito de aumento e sombra */
+    display: flex;
+    flex-direction: column; /* Garante que a imagem e o conteúdo fiquem empilhados na vertical */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar mais destaque */
+}
+
+.card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 300px; /* Aumenta a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente sem distorcer */
+    cursor: pointer; /* Indica que a imagem pode ser clicada */
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #1c1c1c; /* Cor de fundo branca para o corpo do card */
+    flex-grow: 1; /* Faz com que o corpo do card ocupe o restante do espaço disponível */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f7d5a2;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff; /* Cor mais suave para o texto */
+}
+
+.card-text strong {
+    color: #ffffff; /* Cor mais escura para os títulos de cada detalhe (como "Grão preferido") */
+}
+
+/* Estilo para os ícones sociais */
+.social-icons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #333; /* Cor padrão dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Para telas menores, empilha os cards */
+        align-items: center; /* Centraliza os cards */
+    }
+
+    .col {
+        width: 80%; /* Reduz a largura dos cards em telas menores */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+    }
+}
+
+
+
 
 
 /* Sessão Nossos Grãos */
@@ -301,25 +391,25 @@ p{
 .card-body h5 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ffb84d; /* Laranja claro */
+    color: #f7d5a2;
     margin-bottom: 15px;
 }
 
 .card-body p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #d3d3d3; /* Cinza claro */
+    color: #d3d3d3; 
 }
 
 .card-footer {
-    background-color: #1c1c1c; /* Fundo escuro */
+    background-color: #1c1c1c; 
     border-top: none;
     text-align: center;
 }
 
 .card-footer .btn {
-    background-color: #ff8c00; /* Botão em laranja forte */
-    color: #fff; /* Texto branco */
+    background-color: #c8a166;
+    color: #fff; 
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -327,7 +417,7 @@ p{
 }
 
 .card-footer .btn:hover {
-    background-color: #ffb84d; /* Laranja mais escuro */
+    background-color: #f7d5a2; /* Laranja mais escuro */
 }
 
 /* Responsividade para a seção */
