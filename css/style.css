@@ -176,9 +176,19 @@ p{
 /* ----- Seção Nosso Espaço ----- */
 /* --------------------------------- */
 
+.titulo-espaco h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    font-size: 2.5rem;
+    color: #f7d5a2;
+    text-align: center;
+}
+
 .sessao-espaco {
-    background-color: #121212; /* Fundo escuro */
-    padding: 60px 20px; /* Espaçamento interno */
+    display: inline-flex;
+    background-color: #121212;
+    padding: 20px 20px; 
+    justify-content: space-around;
 }
 
 .sessao-espaco h2 {
@@ -196,6 +206,39 @@ p{
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+.container-espaco{
+    width: 50%;
+    gap: 20px;
+}
+
+.imagens-espaco{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px; 
+}
+
+.imagens-espaco img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-espaco{
+    width: 40%;
+    float: right;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+
+.texto-espaco p{
+    margin: 10%;
+    text-align: justify;
 }
 
 /* ------------------------------- */
