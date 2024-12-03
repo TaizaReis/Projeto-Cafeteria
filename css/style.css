@@ -39,7 +39,7 @@ h1 {
 }
 
 body { 
-    background-color: #fbff00;
+    background-color: #121212;
 }
 
 /* Seções da navbar */
@@ -56,6 +56,11 @@ body {
 .nav-link:hover {
     color: #f7d5a2;
     transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Scroll suave ao clicar */
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar-nav {
@@ -109,11 +114,19 @@ p{
 }
 
 /* Menu de itens */
+.sessão-menu h2 {font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    font-size: 2.5rem;
+    color: #ffb84d; /* Laranja claro */
+    text-align: center;
+}
+
+
 .item-menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin: 20px;
+    gap: 15px;
+    margin: 10px;
 }
 
 .item {
@@ -154,9 +167,238 @@ p{
 }
 
 .item-button:hover {
-    background-color: #ff6600; /* Tom de laranja mais escuro no hover */
+    background-color: #ffb84d; /* Tom de laranja mais escuro no hover */
 }
 
+/* ------------------------------- */
+/* ----- Seção Nosso Espaço ----- */
+/* --------------------------------- */
+
+.sessao-espaco {
+    background-color: #121212; /* Fundo escuro */
+    padding: 60px 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar conteúdo */
+}
+
+.sessao-espaco h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #ffb84d; /* Laranja claro */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.sessao-espaco p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: #d3d3d3; /* Cor cinza claro */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+/* ------------------------------- */
+/* ----- Seção Espaço de Coworking ----- */
+/* --------------------------------- */
+
+.sessao-coworking {
+    background-color: #121212; /* Fundo escuro */
+    padding: 60px 20px; /* Espaçamento interno */
+}
+
+.sessao-coworking h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #ffb84d; /* Laranja claro */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.sessao-coworking .img-coworking {
+    display: grid; /* Usando grid para um controle mais preciso do espaço */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste automático das colunas */
+    gap: 30px; /* Espaçamento entre as imagens */
+    justify-items: center; /* Centraliza as imagens no grid */
+    margin-top: 20px;
+}
+
+.sessao-coworking .img-coworking img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave nas imagens */
+    transition: transform 0.3s ease; /* Efeito de transformação suave */
+}
+
+.sessao-coworking .img-coworking img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.sessao-coworking .coworking-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: #d3d3d3; /* Cor cinza claro */
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a descrição */
+}
+
+/* ------------------------------- */
+/* Responsividade para a seção Espaço de Coworking */
+/* --------------------------------- */
+
+@media (max-width: 768px) {
+    .sessao-coworking h3 {
+        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+    }
+
+    .sessao-coworking .coworking-description {
+        font-size: 1rem; /* Texto menor em telas menores */
+    }
+
+    .sessao-coworking .img-coworking {
+        grid-template-columns: 1fr; /* Em telas pequenas, exibe as imagens em uma coluna */
+        gap: 20px; /* Menor espaçamento entre as imagens */
+    }
+
+    .sessao-coworking .img-coworking img {
+        max-width: 100%; /* Ajusta a largura das imagens para caber em telas menores */
+    }
+}
+
+
+
+/* Sessão Nossos Grãos */
+.sessao-graos {
+    background-color: #121212; /* Fundo escuro */
+    padding: 40px 0; /* Espaçamento interno */
+}
+
+.sessao-graos h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #ffb84d; /* Laranja claro */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid #333; /* Borda escura */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #1c1c1c; /* Fundo escuro do card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra escura */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    font-family: 'Lato', sans-serif;
+    color: #fff; /* Texto branco */
+}
+
+.card-body h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffb84d; /* Laranja claro */
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #d3d3d3; /* Cinza claro */
+}
+
+.card-footer {
+    background-color: #1c1c1c; /* Fundo escuro */
+    border-top: none;
+    text-align: center;
+}
+
+.card-footer .btn {
+    background-color: #ff8c00; /* Botão em laranja forte */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer .btn:hover {
+    background-color: #ffb84d; /* Laranja mais escuro */
+}
+
+/* Responsividade para a seção */
+@media (max-width: 768px) {
+    .sessao-graos h2 {
+        font-size: 2rem; /* Título menor em telas pequenas */
+    }
+
+    .card-body p {
+        font-size: 0.85rem; /* Texto menor em telas menores */
+    }
+}
+
+  
+
+/* Sessão de Localização */
+
+.sessao-localizacao {
+    background-color: #121212; /* Fundo escuro */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-top: 2px solid #333; /* Linha separadora escura */
+}
+
+.sessao-localizacao h2 {
+    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
+    font-size: 2.5rem; /* Tamanho do título ajustado */
+    color: #ffb84d; /* Cor laranja claro */
+    text-align: center; /* Centralização do título */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Ajuste para o texto de descrição */
+.sessao-localizacao p {
+    font-family: 'Lato', sans-serif; /* Fonte personalizada */
+    font-size: 1.1rem; /* Tamanho do texto ajustado para maior legibilidade */
+    color: #d3d3d3; /* Cor cinza claro */
+    line-height: 1.6; /* Altura da linha */
+    text-align: center; /* Centralização do texto */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo do mapa (iframe) */
+.sessao-localizacao .ratio {
+    border: 2px solid #333; /* Bordas escuras */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Evita elementos saindo da área */
+    margin: 0 auto; /* Centraliza o mapa */
+    max-width: 800px; /* Largura máxima */
+}
+
+/* Estilo para o iframe do mapa */
+.sessao-localizacao iframe {
+    border: none; /* Remove borda padrão do iframe */
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 400px; /* Altura padrão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sessao-localizacao h2 {
+        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+    }
+
+    .sessao-localizacao p {
+        font-size: 1rem; /* Texto menor em telas pequenas */
+    }
+
+    .sessao-localizacao .ratio iframe {
+        height: 300px; /* Reduz altura do mapa em telas menores */
+    }
+}
 /* Footer */
 .footer-bottom {
     background-color: #1c1c1c; /* Fundo escuro para o rodapé */
