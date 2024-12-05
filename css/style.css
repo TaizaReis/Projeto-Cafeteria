@@ -245,46 +245,69 @@ p{
 /* ----- Seção Espaço de Coworking ----- */
 /* --------------------------------- */
 
-.sessao-coworking {
-    background-color: #121212; /* Fundo escuro */
-    padding: 60px 20px; /* Espaçamento interno */
-}
-
-.sessao-coworking h3 {
+.titulo-coworking h2 {
     font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
     font-size: 2.5rem;
-    color: #f7d5a2; /* Laranja claro */
-    margin-bottom: 30px; /* Espaçamento inferior */
+    color: #f7d5a2;
+    text-align: center;
 }
 
-.sessao-coworking .img-coworking {
-    display: grid; /* Usando grid para um controle mais preciso do espaço */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste automático das colunas */
-    gap: 30px; /* Espaçamento entre as imagens */
-    justify-items: center; /* Centraliza as imagens no grid */
-    margin-top: 20px;
+.sessao-coworking {
+    display: inline-flex;
+    background-color: #121212;
+    padding: 20px 20px; 
+    justify-content: space-around;
 }
 
-.sessao-coworking .img-coworking img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave nas imagens */
-    transition: transform 0.3s ease; /* Efeito de transformação suave */
+.sessao-coworking h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    font-size: 2.5rem;
+    color: #f7d5a2; 
+    text-align: center;
 }
 
-.sessao-coworking .img-coworking img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-}
-
-.sessao-coworking .coworking-description {
+.sessao-coworking p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #d3d3d3; /* Cor cinza claro */
-    margin-top: 20px;
     line-height: 1.6;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza a descrição */
+    margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+.container-coworking{
+    width: 50%;
+    gap: 20px;
+}
+
+.imagens-coworking{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px; 
+}
+
+.imagens-coworking img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-coworking{
+    width: 40%;
+    float: right;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+
+.texto-coworking p{
+    margin: 10%;
+    text-align: justify;
 }
 
 /* ------------------------------- */
@@ -320,6 +343,7 @@ p{
     text-align: center; /* Centraliza o título */
     font-size: 2rem;
     margin-bottom: 40px; /* Espaçamento abaixo do título */
+    color: #f7d5a2;
 }
 
 /* Estilos para os Cards */
@@ -397,10 +421,6 @@ p{
 }
 
 
-
-
-
-/* Sessão Nossos Grãos */
 .sessao-graos {
     background-color: #121212; /* Fundo escuro */
     padding: 40px 0; /* Espaçamento interno */
@@ -409,9 +429,13 @@ p{
 .sessao-graos h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
-    color: #ffb84d; /* Laranja claro */
+    color: #f7d5a2; /* Laranja claro */
     text-align: center;
     margin-bottom: 30px;
+}
+
+.container-graos{
+    padding: 0 10%;
 }
 
 .card {
@@ -474,7 +498,124 @@ p{
     }
 }
 
-  
+
+/* Sessão RESERVA e DEPOIMENTOS*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 400px;
+    margin: 5% 10%;
+}
+
+.form-container h3 {
+    color: #f7d5a2;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #f7d5a2;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+button {
+    background-color: #f7d5a2;
+    color: #1c1c1c;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c8a166;
+}
+
+/* Cards de Depoimentos */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    margin-top: 60px;
+    margin-right: 10%;
+}
+
+.card-testimonial {
+    background-color: #1c1c1c;
+    color: #f7d5a2;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.card-testimonial p {
+    font-style: italic;
+}
+
+.card-testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .testimonials {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
 
 /* Sessão de Localização */
 
@@ -487,7 +628,7 @@ p{
 .sessao-localizacao h2 {
     font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
     font-size: 2.5rem; /* Tamanho do título ajustado */
-    color: #ffb84d; /* Cor laranja claro */
+    color: #c8a166; /* Cor laranja claro */
     text-align: center; /* Centralização do título */
     margin-bottom: 30px; /* Espaçamento inferior */
 }
@@ -496,7 +637,7 @@ p{
 .sessao-localizacao p {
     font-family: 'Lato', sans-serif; /* Fonte personalizada */
     font-size: 1.1rem; /* Tamanho do texto ajustado para maior legibilidade */
-    color: #d3d3d3; /* Cor cinza claro */
+    color: #858585; /* Cor cinza claro */
     line-height: 1.6; /* Altura da linha */
     text-align: center; /* Centralização do texto */
     margin-bottom: 20px; /* Margem inferior */
@@ -537,7 +678,7 @@ p{
     background-color: #1c1c1c; /* Fundo escuro para o rodapé */
     padding: 10px;
     text-align: center;
-    color: #ffb84d; /* Tom de laranja claro */
+    color: #c8a166; /* Tom de laranja claro */
 }
 
 /* Para ajustar o alinhamento e espaçamento em dispositivos móveis */
