@@ -346,6 +346,10 @@ p{
     color: #f7d5a2;
 }
 
+.container-equipe{
+    margin: 0 10%;
+}
+
 /* Estilos para os Cards */
 .card {
     border: 1px solid #1c1c1c; /* Borda suave para o card */

@@ -1,0 +1,118 @@
+/* ------------------------------- */
+/*----- Configurações Básicas -----*/
+/* --------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #121212; /* Fundo escuro */
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: #000;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #f7d5a2;
+    margin: 40px 0px 0px 50px;
+    letter-spacing: 3px;
+}
+
+/* --------------------------------- */
+/*--------------- NAVBAR -----------*/
+/* --------------------------------- */
+
+.logo-img {
+    width: 80px;
+    display: inline-block;
+    vertical-align: text-top;
+    }
+
+/* Título do site */
+.navbar-brand {
+    font-family: "Bungee", sans-serif;
+    color: #f7d5a2;
+    margin-left: 15px;
+}
+
+body { 
+    background-color: #121212;
+}
+
+/* Seções da navbar */
+.nav-link {
+    color:#834a34;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    color:#FFF;
+}
+
+.nav-link:hover {
+    color: #f7d5a2;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Scroll suave ao clicar */
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Empurra os itens para a direita */
+  }
+  
+.product-card {
+    margin: 0px 20px;
+    display: flex;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 70%; /* Limita a largura total do card */
+  }
+  
+.product-image {
+    margin: 3%;
+    max-width: auto; /* Limita o tamanho máximo da imagem */
+    height: 500px;
+    object-fit: cover;
+    border-right: 1px solid #FFF; /* Adiciona uma separação visual entre a imagem e o texto */
+  }
+  
+.product-info {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+  }
+  
+.product-info li {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    color: #333;
+  }
+  
+.product-info strong {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #555;
+    line-height: 60px;
+  }
+  
