@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-family: "Josefin Sans", sans-serif;
-    color: #f7d5a2;
+    color: #f7d5a2; /* Dourado */
     margin: 40px 0px 0px 50px;
     letter-spacing: 3px;
 }
@@ -36,32 +36,28 @@ h2 {
     width: 80px;
     display: inline-block;
     vertical-align: text-top;
-    }
+}
 
 /* Título do site */
 .navbar-brand {
     font-family: "Bungee", sans-serif;
-    color: #f7d5a2;
+    color: #f7d5a2; /* Dourado */
     margin-left: 15px;
-}
-
-body { 
-    background-color: #121212;
 }
 
 /* Seções da navbar */
 .nav-link {
-    color:#834a34;
+    color: #834a34; /* Marrom */
     font-family: "Josefin Sans", sans-serif;
 }
 
 .nav-link:link,
-.nav-link:visited{
-    color:#FFF;
+.nav-link:visited {
+    color: #FFF;
 }
 
 .nav-link:hover {
-    color: #f7d5a2;
+    color: #f7d5a2; /* Dourado */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -72,26 +68,29 @@ html {
 
 .navbar-nav {
     margin-left: auto; /* Empurra os itens para a direita */
-  }
-  
+}
+
+/* Estilo do card do produto */
 .product-card {
     margin: 0px 20px;
     display: flex;
-    background-color: #1c1c1c;
+    background-color: #1c1c1c; /* Escuro */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 70%; /* Limita a largura total do card */
-  }
-  
+}
+
+/* Estilo da imagem do produto */
 .product-image {
     margin: 3%;
     max-width: auto; /* Limita o tamanho máximo da imagem */
     height: 500px;
     object-fit: cover;
     border-right: 1px solid #FFF; /* Adiciona uma separação visual entre a imagem e o texto */
-  }
-  
+}
+
+/* Informações do produto */
 .product-info {
     list-style: none;
     margin: 0;
@@ -100,19 +99,74 @@ html {
     flex-direction: column;
     gap: 10px;
     flex: 1; /* Faz com que o texto ocupe o espaço restante */
-  }
-  
+}
+
 .product-info li {
     font-family: "Josefin Sans", sans-serif;
     font-size: 19px;
-    color: #333;
-  }
-  
+    color: #fff; /* Texto branco */
+}
+
 .product-info strong {
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 1px;
     font-size: 24px;
-    color: #555;
+    color: #f7d5a2; /* Dourado */
     line-height: 60px;
-  }
-  
+}
+
+/* Personalizando o botão */
+.btn-primary {
+    background-color: #f7d5a2; /* Dourado */
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e09f50; /* Tom de dourado mais escuro */
+    transform: translateY(-5px);
+}
+
+.btn-primary:focus {
+    outline: none;
+}
+
+/* Adicionando animação ao conteúdo */
+.product-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efeito de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo geral do corpo */
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para as imagens de produto em telas menores */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
