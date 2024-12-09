@@ -286,9 +286,21 @@ p{
     transition: 0.3s ease, transform 0.3s ease;
 }
 
-/* ------------------------------- */
-/* ----- Seção Nosso Espaço ----- */
-/* --------------------------------- */
+/* Para telas menores (tablets, por exemplo) */
+@media (max-width: 768px) {
+    .item-menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
+    }
+}
+
+/* Para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .item-menu {
+        grid-template-columns: 1fr; /* 1 item por linha */
+    }
+}
+
+/* ===================== SESSÃO NOSSO ESPAÇO ===================== */
 
 .titulo-espaco h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -450,21 +462,28 @@ p{
 /* --------------------------------- */
 
 @media (max-width: 768px) {
-    .sessao-coworking h3 {
-        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+    .sessao-coworking, .sessao-espaco {
+        flex-direction: column; /* Altera de inline-flex para coluna */
+        align-items: center; /* Centraliza os itens */
     }
 
-    .sessao-coworking .coworking-description {
-        font-size: 1rem; /* Texto menor em telas menores */
+    .container-coworking, .container-espaco {
+        width: 100%; /* Ajusta a largura para ocupar toda a tela */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os elementos */
     }
 
-    .sessao-coworking .img-coworking {
-        grid-template-columns: 1fr; /* Em telas pequenas, exibe as imagens em uma coluna */
-        gap: 20px; /* Menor espaçamento entre as imagens */
+    .imagens-coworking, .imagens-espaco {
+        grid-template-columns: 1fr; /* Exibe as imagens em uma única coluna */
+        gap: 10px; /* Ajusta o espaçamento entre as imagens */
     }
 
-    .sessao-coworking .img-coworking img {
-        max-width: 100%; /* Ajusta a largura das imagens para caber em telas menores */
+    .texto-coworking, .texto-espaco {
+        width: 100%; /* Ajusta a largura para caber em telas menores */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .texto-coworking p, .texto-espaco p {
+        margin: 0; /* Remove a margem extra */
     }
 }
 
