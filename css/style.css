@@ -310,6 +310,27 @@ p{
     text-align: justify;
 }
 
+/* *****Icones****** */
+.icones-espaco i, .icones-coworking i {
+  font-size: 1.5rem; /* Tamanho dos ícones */
+  margin: 0 15px; /* Espaçamento horizontal entre os ícones */
+  color: #6c757d; /* Cor neutra */
+}
+
+.icones-espaco i:hover, .icones-coworking i:hover {
+  color: #d4a373; /* Cor temática ao passar o mouse */
+  transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Adicionar espaçamento entre as linhas, se necessário */
+.icones-espaco, .icones-coworking {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones */
+  gap: 20px; /* Espaçamento entre ícones (se preferir usar gap) */
+  margin-top: 15px; /* Espaço acima dos ícones */
+}
+
+
 /* ------------------------------- */
 /* Responsividade para a seção Espaço de Coworking */
 /* --------------------------------- */
@@ -550,7 +571,7 @@ input, select, textarea {
 
 button {
     background-color: #f7d5a2;
-    color: #1c1c1c;
+    color: #ffffff;
     padding: 0.8rem;
     border: none;
     border-radius: 5px;
@@ -622,43 +643,42 @@ button:hover {
 
 
 /* Sessão de Localização */
+.localizacao{
+    background-color: #1c1c1c;
+}
+.container-localizacao{
+    background-color: #1c1c1c;
+}
 
-.sessao-localizacao {
-    background-color: #121212; /* Fundo escuro */
-    padding: 40px 20px; /* Espaçamento interno */
-    border-top: 2px solid #333; /* Linha separadora escura */
+.sessao-localizacao {    
+    padding: 40px 20px;
+    border-top: 2px solid #333;
 }
 
 .sessao-localizacao h2 {
-    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
-    font-size: 2.5rem; /* Tamanho do título ajustado */
-    color: #c8a166; /* Cor laranja claro */
-    text-align: center; /* Centralização do título */
-    margin-bottom: 30px; /* Espaçamento inferior */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem; 
+    color: #f7d5a2; 
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 /* Ajuste para o texto de descrição */
 .sessao-localizacao p {
-    font-family: 'Lato', sans-serif; /* Fonte personalizada */
-    font-size: 1.1rem; /* Tamanho do texto ajustado para maior legibilidade */
-    color: #858585; /* Cor cinza claro */
-    line-height: 1.6; /* Altura da linha */
-    text-align: center; /* Centralização do texto */
-    margin-bottom: 20px; /* Margem inferior */
-}
-
-/* Estilo do container de localização */
-.sessao-localizacao {
-    padding: 60px 20px; /* Espaçamento interno para desktop */
-    color: #fff; /* Texto claro para contraste */
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 1.1rem;
+    color: #858585;
+    line-height: 1.6; 
+    text-align: center;
+    margim-top: 30px;
 }
 
 /* Estilo do mapa (iframe) */
 .sessao-localizacao .ratio {
-    border: 2px solid #ffb84d; /* Bordas laranja claro */
+    border: 2px solid #333; /* Bordas escuras */
     border-radius: 10px; /* Bordas arredondadas */
     overflow: hidden; /* Evita elementos saindo da área */
-    margin: 20px auto; /* Centraliza e adiciona espaçamento */
+    margin: 0 auto; /* Centraliza o mapa */
     max-width: 800px; /* Largura máxima */
 }
 
@@ -667,11 +687,6 @@ button:hover {
     border: none; /* Remove borda padrão do iframe */
     width: 100%; /* Ocupa toda a largura disponível */
     height: 400px; /* Altura padrão */
-}
-
-/* Estilo para o fundo da seção */
-.bg-light {
-    background-color: #000; /* Define o fundo como preto */
 }
 
 
@@ -691,7 +706,7 @@ button:hover {
 }
 /* Footer */
 .footer-bottom {
-    background-color: #1c1c1c; /* Fundo escuro para o rodapé */
+    background-color: #333; /* Fundo escuro para o rodapé */
     padding: 10px;
     text-align: center;
     color: #c8a166; /* Tom de laranja claro */

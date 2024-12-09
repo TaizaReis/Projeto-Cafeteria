@@ -31,7 +31,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
@@ -48,52 +48,64 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#localizacao">Localização</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
   
-  
+  <h2 class="text-center mt-5">Grão Brasileiro</h2>
   <div class="product-container">
-    <h2 class="text-center mt-5">Grão Brasileiro</h2>
+    
+    <!-- Container Flex para imagem e informações -->
     <div class="product-card mb-4">
-        <img src="css/img/embalagem1.png" alt="Café Premium" class="product-image">
+      <!-- Imagem do produto -->
+      <div class="product-image-wrapper">
+          <img src="css/img/embalagem1.png" alt="Café Premium" class="product-image">
+      </div>
+      <!-- Informações do produto -->
+      <div class="product-info-wrapper">
         <ul class="product-info list unstyled">
-            <li><strong>Nome:</strong> Café Premium Especial</li>
-            <li><strong>Nível de Torra:</strong> Média</li>
-            <li><strong>Origem:</strong> Etiópia</li>
-            <li><strong>Variedade:</strong> Arábica</li>
-            <li><strong>Notas:</strong> Chocolate, frutas cítricas</li>
-            <li><strong>Acidez:</strong> Média</li>
-            <li><strong>Corpo:</strong> Aveludado</li>
+            <li><i class="fas fa-coffee"></i> <strong>Nome:</strong> Café Premium Especial</li>
+            <li><i class="fas fa-fire"></i> <strong>Nível de Torra:</strong> Média</li>
+            <li><i class="fas fa-globe"></i> <strong>Origem:</strong> Etiópia</li>
+            <li><i class="fas fa-seedling"></i> <strong>Variedade:</strong> Arábica</li>
+            <li><i class="fas fa-cookie"></i> <strong>Notas:</strong> Chocolate, frutas cítricas</li>
+            <li><i class="fas fa-flask"></i> <strong>Acidez:</strong> Média</li>
+            <li><i class="fas fa-mug-hot"></i> <strong>Corpo:</strong> Aveludado</li>
         </ul>
     </div>
+    
 
     <!-- Descrição Completa sobre o Café -->
-    <div class="product-description">
-      <h3>Sobre o Café</h3>
-      <p>O Café Premium Especial é cultivado nas regiões montanhosas da Etiópia, onde as condições climáticas e a altitude proporcionam uma qualidade superior. A variedade Arábica é conhecida por seu sabor refinado e suave, que se traduz em uma experiência de degustação única.</p>
-      
-      <p>Com uma torra média, este café apresenta notas de chocolate amargo e frutas cítricas, criando um equilíbrio perfeito entre doçura e acidez. Seu corpo aveludado garante uma sensação aveludada no paladar, tornando-o ideal para quem busca um café sofisticado e encorpado.</p>
-      
+      <div class="product-description">
+        <h3>Sobre o Café</h3>
+        <p>O Café Premium Especial é cultivado nas regiões montanhosas da Etiópia, onde as condições climáticas e a altitude proporcionam uma qualidade superior. A variedade Arábica é conhecida por seu sabor refinado e suave, que se traduz em uma experiência de degustação única.</p>      
+        <p>Com uma torra média, este café apresenta notas de chocolate amargo e frutas cítricas, criando um equilíbrio perfeito entre doçura e acidez. Seu corpo aveludado garante uma sensação aveludada no paladar, tornando-o ideal para quem busca um café sofisticado e encorpado.</p>
+      </div>
+    </div>
+    <!-- Informações do Produto -->
+    <div class="product-info">
       <h4>Características do Grão:</h4>
       <ul class="product-details">
-          <li><strong>Origem:</strong> Região montanhosa da Etiópia</li>
-          <li><strong>Processamento:</strong> Natural</li>
-          <li><strong>Altura do Cultivo:</strong> 1.800 metros</li>
-          <li><strong>Notas de Sabor:</strong> Chocolate, frutas cítricas, caramelo</li>
-          <li><strong>Intensidade:</strong> Média-Alta</li>
-          <li><strong>Acidez:</strong> Brilhante, com leve toque cítrico</li>
-          <li><strong>Corpo:</strong> Suave e cremoso</li>
+          <li><i class="fas fa-globe"></i> <strong>Origem:</strong> Região montanhosa da Etiópia</li>
+          <li><i class="fas fa-recycle"></i> <strong>Processamento:</strong> Natural</li>
+          <li><i class="fas fa-mountain"></i> <strong>Altura do Cultivo:</strong> 1.800 metros</li>
+          <li><i class="fas fa-cookie"></i> <strong>Notas de Sabor:</strong> Chocolate, frutas cítricas, caramelo</li>
+          <li><i class="fas fa-balance-scale"></i> <strong>Intensidade:</strong> Média-Alta</li>
+          <li><i class="fas fa-flask"></i> <strong>Acidez:</strong> Brilhante, com leve toque cítrico</li>
+          <li><i class="fas fa-mug-hot"></i> <strong>Corpo:</strong> Suave e cremoso</li>
       </ul>
-    </div>
-
-   <!-- Botão para voltar -->
+  </div>
+  
+    <!-- Botão para voltar -->
     <div class="button-back text-center mt-4">
       <a href="index.html" class="btn btn-secondary">Voltar para os Grãos</a>
     </div>
-  </div>
+  </div>  
+
+   
+  
 
 <!-- Link para o JavaScript do Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
