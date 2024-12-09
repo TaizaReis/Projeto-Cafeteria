@@ -1,6 +1,4 @@
-/* ------------------------------- */
-/*----- Configurações Básicas -----*/
-/* --------------------------------- */
+/* ===================== CONFIGURAÇÕES GERAIS ===================== */
 
 * {
     margin: 0;
@@ -15,15 +13,14 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: #000;
+    scroll-behavior: smooth;
 }
 
 h1 {
     font-family: "Josefin Sans", sans-serif;
 }
 
-/* --------------------------------- */
-/*--------------- NAVBAR -----------*/
-/* --------------------------------- */
+/* ===================== NAVBAR ===================== */
 
 .logo-img {
     width: 80px;
@@ -31,7 +28,6 @@ h1 {
     vertical-align: text-top;
     }
 
-/* Título do site */
 .navbar-brand {
     font-family: "Bungee", sans-serif;
     color: #f7d5a2;
@@ -42,7 +38,6 @@ body {
     background-color: #121212;
 }
 
-/* Seções da navbar */
 .nav-link {
     color:#834a34;
     font-family: "Josefin Sans", sans-serif;
@@ -58,18 +53,74 @@ body {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Scroll suave ao clicar */
-html {
-    scroll-behavior: smooth;
+.navbar-nav {
+    margin-left: auto;
+  }
+
+/* ===================== RESPONSIVIDADE NAVBAR ===================== */
+
+@media (max-width: 992px) {
+
+.navbar-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    margin: 0;
+}
+
+.menu-icon {
+    display: flex;
 }
 
 .navbar-nav {
-    margin-left: auto; /* Empurra os itens para a direita */
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #121212;
+    width: 100%;
+    padding: 20px 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
-/* ------------------------------- */
-/*------------- Hero Header --------*/
-/* --------------------------------- */
+.navbar-nav {
+    opacity: 0.2;
+}
+
+.menu-toggle:checked + .menu-icon + .navbar-nav {
+    opacity: 1;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 10px;
+}
+}
+
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* ===================== HERO HEADER ===================== */
 
 header{
     position: relative;
@@ -96,24 +147,87 @@ p{
     z-index: 10;
 }
 
-/* Ajustes do carrossel */
 .carousel-inner {
-    background-color: #1c1c1c; /* Fundo escuro para o carrossel */
+    background-color: #1c1c1c; 
     width: 100%;
     height: 700px;
 }
 
-/* Ajuste dos indicadores do carrossel */
-.carousel-indicators li {
-    background-color: #ffb84d; /* Laranja claro */
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(80%); /* Ajuste para contraste nos ícones do carrossel */
+    filter: invert(80%);
 }
 
-/* Menu de itens */
+@media (max-width: 992px) { 
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-text-box {
+        width: 80%; 
+        top: 30%; 
+    }
+
+    h2 {
+        font-size: 48px; 
+        letter-spacing: 1.5px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) { 
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-text-box {
+        width: 90%; 
+        top: 35%; 
+        padding: 10px; 
+    }
+
+    h2 {
+        font-size: 36px; 
+        letter-spacing: 1px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    .carousel-inner {
+        background-color: #1c1c1c;
+        width: 100%;
+        height: auto; /* Ajusta automaticamente à altura do conteúdo */
+        min-height: auto; /* Define uma altura mínima */
+    }
+
+    #carouselCardapio{
+        width: 100%;
+        height: auto; /* Ajusta automaticamente à altura do conteúdo */
+        min-height: auto; /* Define uma altura mínima */
+    }
+}
+
+
+
+
+/* ===================== SESSÃO DE MENU ===================== */
 .sessão-menu h2 {
     font-family: 'Josefin Sans', sans-serif;
     padding: 15px;
@@ -650,6 +764,12 @@ button:hover {
     background-color: #1c1c1c;
 }
 
+.py-5{
+    background-color: #1c1c1c;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
 .sessao-localizacao {    
     padding: 40px 20px;
     border-top: 2px solid #333;
@@ -670,7 +790,7 @@ button:hover {
     color: #858585;
     line-height: 1.6; 
     text-align: center;
-    margim-top: 30px;
+    margin-top: 30px;
 }
 
 /* Estilo do mapa (iframe) */
