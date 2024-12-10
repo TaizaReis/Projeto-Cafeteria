@@ -1,4 +1,4 @@
-/* ===================== CONFIGURAÇÕES GERAIS ===================== */
+/* =================================== CONFIGURAÇÕES GERAIS =================================== */
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 html {
-    background-color: #121212; /* Fundo escuro */
+    background-color: #121212;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -20,7 +20,7 @@ h1 {
     font-family: "Josefin Sans", sans-serif;
 }
 
-/* ===================== NAVBAR ===================== */
+/* ========================================== NAVBAR ========================================== */
 
 .logo-img {
     width: 80px;
@@ -56,69 +56,6 @@ body {
 .navbar-nav {
     margin-left: auto;
   }
-
-/* ===================== RESPONSIVIDADE NAVBAR ===================== */
-
-@media (max-width: 992px) {
-
-.navbar-container {
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-img {
-    width: 60px;
-}
-
-.navbar-brand {
-    font-size: 18px;
-    margin: 0;
-}
-
-.menu-icon {
-    display: flex;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: #121212;
-    width: 100%;
-    padding: 20px 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.navbar-nav {
-    opacity: 0.2;
-}
-
-.menu-toggle:checked + .menu-icon + .navbar-nav {
-    opacity: 1;
-}
-
-.nav-link {
-    font-size: 18px;
-    padding: 10px;
-}
-}
-
-
-@media (max-width: 480px) {
-    .logo-img {
-        width: 50px;
-    }
-
-    .navbar-brand {
-        font-size: 16px;
-    }
-
-    .nav-link {
-        font-size: 14px;
-    }
-}
 
 /* ===================== HERO HEADER ===================== */
 
@@ -158,75 +95,6 @@ p{
     filter: invert(80%);
 }
 
-@media (max-width: 992px) { 
-
-    header{
-        width: 100%;
-        height: auto;
-        min-height: auto;
-    }
-
-    .hero-text-box {
-        width: 80%; 
-        top: 30%; 
-    }
-
-    h2 {
-        font-size: 48px; 
-        letter-spacing: 1.5px; 
-    }
-
-    p {
-        font-size: 16px; 
-    }
-
-    .carousel-inner {
-        width: 100%;
-        height: auto;
-        min-height: auto;
-    }
-}
-
-@media (max-width: 480px) { 
-
-    header{
-        width: 100%;
-        height: auto;
-        min-height: auto;
-    }
-
-    .hero-text-box {
-        width: 90%; 
-        top: 35%; 
-        padding: 10px; 
-    }
-
-    h2 {
-        font-size: 36px; 
-        letter-spacing: 1px; 
-    }
-
-    p {
-        font-size: 14px; 
-    }
-
-    .carousel-inner {
-        background-color: #1c1c1c;
-        width: 100%;
-        height: auto; /* Ajusta automaticamente à altura do conteúdo */
-        min-height: auto; /* Define uma altura mínima */
-    }
-
-    #carouselCardapio{
-        width: 100%;
-        height: auto; /* Ajusta automaticamente à altura do conteúdo */
-        min-height: auto; /* Define uma altura mínima */
-    }
-}
-
-
-
-
 /* ===================== SESSÃO DE MENU ===================== */
 .sessão-menu h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -245,12 +113,12 @@ p{
 }
 
 .item {
-    background-color: #1c1c1c; /* Fundo escuro para os itens */
+    background-color: #1c1c1c; 
     padding: 15px;
     text-align: center;
-    border: 1px solid #333; /* Borda escura */
+    border: 1px solid #333; 
     border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra mais sutil */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .item img {
@@ -273,7 +141,7 @@ p{
 }
 
 .item-button {
-    background-color: #c8a166; /* Botão em laranja mais forte */
+    background-color: #c8a166;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -282,22 +150,8 @@ p{
 }
 
 .item-button:hover {
-    background-color: #f7d5a2; /* Tom de laranja mais escuro no hover */
+    background-color: #f7d5a2; 
     transition: 0.3s ease, transform 0.3s ease;
-}
-
-/* Para telas menores (tablets, por exemplo) */
-@media (max-width: 768px) {
-    .item-menu {
-        grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
-    }
-}
-
-/* Para telas muito pequenas (celulares) */
-@media (max-width: 480px) {
-    .item-menu {
-        grid-template-columns: 1fr; /* 1 item por linha */
-    }
 }
 
 /* ===================== SESSÃO NOSSO ESPAÇO ===================== */
@@ -328,10 +182,10 @@ p{
 .sessao-espaco p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    color: #d3d3d3; /* Cor cinza claro */
+    color: #d3d3d3; 
     line-height: 1.6;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza o parágrafo */
+    margin: 0 auto;
 }
 
 .container-espaco{
@@ -367,9 +221,7 @@ p{
     text-align: justify;
 }
 
-/* ------------------------------- */
-/* ----- Seção Espaço de Coworking ----- */
-/* --------------------------------- */
+/* ===================== SESSÃO COWORKING ====================== */
 
 .titulo-coworking h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -397,10 +249,10 @@ p{
 .sessao-coworking p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    color: #d3d3d3; /* Cor cinza claro */
+    color: #d3d3d3;
     line-height: 1.6;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza o parágrafo */
+    margin: 0 auto; 
 }
 
 .container-coworking{
@@ -436,67 +288,35 @@ p{
     text-align: justify;
 }
 
-/* *****Icones****** */
 .icones-espaco i, .icones-coworking i {
-  font-size: 1.5rem; /* Tamanho dos ícones */
-  margin: 0 15px; /* Espaçamento horizontal entre os ícones */
-  color: #6c757d; /* Cor neutra */
+  font-size: 1.5rem; 
+  margin: 0 15px; 
+  color: #6c757d;
 }
 
 .icones-espaco i:hover, .icones-coworking i:hover {
-  color: #d4a373; /* Cor temática ao passar o mouse */
-  transition: color 0.3s ease; /* Transição suave */
+  color: #d4a373; 
+  transition: color 0.3s ease; 
 }
 
-/* Adicionar espaçamento entre as linhas, se necessário */
 .icones-espaco, .icones-coworking {
   display: flex;
-  justify-content: center; /* Centraliza os ícones */
-  gap: 20px; /* Espaçamento entre ícones (se preferir usar gap) */
-  margin-top: 15px; /* Espaço acima dos ícones */
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 15px; 
 }
 
+/* ======================= SESSÃO EQUIPE ======================== */
 
-/* ------------------------------- */
-/* Responsividade para a seção Espaço de Coworking */
-/* --------------------------------- */
-
-@media (max-width: 768px) {
-    .sessao-coworking, .sessao-espaco {
-        flex-direction: column; /* Altera de inline-flex para coluna */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    .container-coworking, .container-espaco {
-        width: 100%; /* Ajusta a largura para ocupar toda a tela */
-        margin-bottom: 20px; /* Adiciona espaçamento entre os elementos */
-    }
-
-    .imagens-coworking, .imagens-espaco {
-        grid-template-columns: 1fr; /* Exibe as imagens em uma única coluna */
-        gap: 10px; /* Ajusta o espaçamento entre as imagens */
-    }
-
-    .texto-coworking, .texto-espaco {
-        width: 100%; /* Ajusta a largura para caber em telas menores */
-        padding: 10px; /* Reduz o padding */
-    }
-
-    .texto-coworking p, .texto-espaco p {
-        margin: 0; /* Remove a margem extra */
-    }
-}
-
-/* Estilos Gerais para a Seção da Equipe */
 #equipe {
-    background-color: #1c1c1c; /* Cor de fundo suave para a seção */
-    padding: 50px 0; /* Espaçamento interno para a seção */
+    background-color: #1c1c1c; 
+    padding: 50px 0; 
 }
 
 .titulo {
-    text-align: center; /* Centraliza o título */
+    text-align: center; 
     font-size: 2rem;
-    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    margin-bottom: 40px;
     color: #f7d5a2;
 }
 
@@ -504,33 +324,32 @@ p{
     margin: 0 10%;
 }
 
-/* Estilos para os Cards */
 .card {
-    border: 1px solid #1c1c1c; /* Borda suave para o card */
-    border-radius: 8px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que a imagem e o conteúdo não ultrapassem as bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para o card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o efeito de aumento e sombra */
+    border: 1px solid #1c1c1c; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     display: flex;
-    flex-direction: column; /* Garante que a imagem e o conteúdo fiquem empilhados na vertical */
+    flex-direction: column; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar mais destaque */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .card-img-top {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
-    height: 300px; /* Aumenta a altura da imagem */
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente sem distorcer */
-    cursor: pointer; /* Indica que a imagem pode ser clicada */
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    cursor: pointer; 
 }
 
 .card-body {
     padding: 15px;
-    background-color: #1c1c1c; /* Cor de fundo branca para o corpo do card */
-    flex-grow: 1; /* Faz com que o corpo do card ocupe o restante do espaço disponível */
+    background-color: #1c1c1c; 
+    flex-grow: 1; 
 }
 
 .card-title {
@@ -541,53 +360,40 @@ p{
 
 .card-text {
     font-size: 1rem;
-    color: #ffffff; /* Cor mais suave para o texto */
+    color: #ffffff; 
 }
 
 .card-text strong {
-    color: #ffffff; /* Cor mais escura para os títulos de cada detalhe (como "Grão preferido") */
+    color: #ffffff; 
 }
 
-/* Estilo para os ícones sociais */
 .social-icons {
     margin-top: 10px;
     text-align: center;
 }
 
 .social-icons a {
-    color: #333; /* Cor padrão dos ícones */
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    font-size: 1.5rem; /* Tamanho dos ícones */
-    transition: color 0.3s ease; /* Transição suave para mudança de cor */
+    color: #333; 
+    margin: 0 10px; 
+    font-size: 1.5rem; 
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #ffffff;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column; /* Para telas menores, empilha os cards */
-        align-items: center; /* Centraliza os cards */
-    }
-
-    .col {
-        width: 80%; /* Reduz a largura dos cards em telas menores */
-        margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
-    }
-}
-
+/* ======================= SESSÃO NOSSOS GRÃOS ======================== */
 
 .sessao-graos {
-    background-color: #121212; /* Fundo escuro */
-    padding: 40px 0; /* Espaçamento interno */
+    background-color: #121212; 
+    padding: 40px 0; 
 }
 
 .sessao-graos h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
-    color: #f7d5a2; /* Laranja claro */
+    color: #f7d5a2; 
     text-align: center;
     margin-bottom: 30px;
 }
@@ -597,10 +403,10 @@ p{
 }
 
 .card {
-    border: 1px solid #333; /* Borda escura */
-    border-radius: 10px; /* Bordas arredondadas */
-    background-color: #1c1c1c; /* Fundo escuro do card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra escura */
+    border: 1px solid #333; 
+    border-radius: 10px; 
+    background-color: #1c1c1c; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
 .card-img-top {
@@ -610,7 +416,7 @@ p{
 
 .card-body {
     font-family: 'Lato', sans-serif;
-    color: #fff; /* Texto branco */
+    color: #fff; 
 }
 
 .card-body h5 {
@@ -642,22 +448,10 @@ p{
 }
 
 .card-footer .btn:hover {
-    background-color: #f7d5a2; /* Laranja mais escuro */
+    background-color: #f7d5a2;
 }
 
-/* Responsividade para a seção */
-@media (max-width: 768px) {
-    .sessao-graos h2 {
-        font-size: 2rem; /* Título menor em telas pequenas */
-    }
-
-    .card-body p {
-        font-size: 0.85rem; /* Texto menor em telas menores */
-    }
-}
-
-
-/* Sessão RESERVA e DEPOIMENTOS*/
+/* ======================= SESSÃO RESERVA + DEPOIMENTOS ======================== */
 
 .container {
     display: flex;
@@ -717,7 +511,6 @@ button:hover {
     background-color: #c8a166;
 }
 
-/* Cards de Depoimentos */
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -749,33 +542,9 @@ button:hover {
     text-align: right;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .form-container {
-        width: 80%;
-        margin: 20px 0;
-    }
+/* =========================== SESSÃO LOCALIZAÇÃO ============================ */
 
-    .testimonials {
-        width: 80%;
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        padding: 1rem;
-        font-size: 0.9rem;
-    }
-}
-
-
-
-
-/* Sessão de Localização */
 .localizacao{
     background-color: #1c1c1c;
 }
@@ -802,7 +571,6 @@ button:hover {
     margin-bottom: 30px; 
 }
 
-/* Ajuste para o texto de descrição */
 .sessao-localizacao p {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 1.1rem;
@@ -812,52 +580,295 @@ button:hover {
     margin-top: 30px;
 }
 
-/* Estilo do mapa (iframe) */
 .sessao-localizacao .ratio {
-    border: 2px solid #333; /* Bordas escuras */
-    border-radius: 10px; /* Bordas arredondadas */
-    overflow: hidden; /* Evita elementos saindo da área */
-    margin: 0 auto; /* Centraliza o mapa */
-    max-width: 800px; /* Largura máxima */
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    max-width: 800px; 
 }
 
-/* Estilo para o iframe do mapa */
 .sessao-localizacao iframe {
-    border: none; /* Remove borda padrão do iframe */
-    width: 100%; /* Ocupa toda a largura disponível */
-    height: 400px; /* Altura padrão */
+    border: none;
+    width: 100%; 
+    height: 400px; 
 }
 
+/* ================================== FOOTER  ==================================== */
+.footer-bottom {
+    background-color: #333; 
+    padding: 10px;
+    text-align: center;
+    color: #c8a166;
+}
 
-/* Responsividade */
+/* ================================================================= */
+/* ============ RESPONSIVIDADE TELAS MÉDIAS-GRANDES ================ */
+/* ================================================================= */
+
+@media (max-width: 992px) {
+
+    /* ===================== RESPONSIVIDADE NAVBAR ===================== */
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-img {
+        width: 60px;
+    }
+    
+    .navbar-brand {
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .menu-icon {
+        display: flex;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: #121212;
+        width: 100%;
+        padding: 20px 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .navbar-nav {
+        opacity: 0.2;
+    }
+    
+    .menu-toggle:checked + .menu-icon + .navbar-nav {
+        opacity: 1;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    /* ================= RESPONSIVIDADE HERO HEADER ================= */
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-text-box {
+        width: 80%; 
+        top: 30%; 
+    }
+
+    h2 {
+        font-size: 48px; 
+        letter-spacing: 1.5px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    /* ================= RESPONSIVIDADE NOSSO ESPAÇO + COWORKING  ================= */
+
+    .sessao-coworking, .sessao-espaco {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .container-coworking, .container-espaco {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .imagens-coworking, .imagens-espaco {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    .texto-coworking, .texto-espaco {
+        text-align: center; 
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .texto-coworking p, .texto-espaco p {
+        margin: 0;
+    }
+    }
+
+/* ================================================================= */
+/* ================ RESPONSIVIDADE TELAS MÉDIAS ==================== */
+/* ================================================================= */
+
 @media (max-width: 768px) {
+    
+    /* ===================== RESPONSIVIDADE MENU ===================== */
+    .item-menu {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    /* ========= RESPONSIVIDADE NOSSO ESPAÇO + COWORKING  ============ */
+    .sessao-coworking, .sessao-espaco {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .container-coworking, .container-espaco {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .imagens-coworking, .imagens-espaco {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    .texto-coworking, .texto-espaco {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .texto-coworking p, .texto-espaco p {
+        margin: 0;
+    }
+
+    /* ============== RESPONSIVIDADE SESSÃO EQUIPE ================= */
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .col {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    /* =========== RESPONSIVIDADE SESSÃO NOSSOS GRÃOS ============== */
+    .sessao-graos h2 {
+        font-size: 2rem; 
+    }
+
+    .card-body p {
+        font-size: 0.85rem;
+    }
+
+    /* ========== RESPONSIVIDADE RESERVA + DEPOIMENTOS ============ */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .testimonials {
+        width: 80%;
+    }
+
+    .card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* ============= RESPONSIVIDADE LOCALIZAÇÃO =============== */
+
     .sessao-localizacao h2 {
-        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+        font-size: 2rem; 
     }
 
     .sessao-localizacao p {
-        font-size: 1rem; /* Texto menor em telas pequenas */
+        font-size: 1rem; 
     }
 
     .sessao-localizacao .ratio iframe {
-        height: 300px; /* Reduz altura do mapa em telas menores */
+        height: 300px; 
     }
-}
-/* Footer */
-.footer-bottom {
-    background-color: #333; /* Fundo escuro para o rodapé */
-    padding: 10px;
-    text-align: center;
-    color: #c8a166; /* Tom de laranja claro */
-}
 
-/* Para ajustar o alinhamento e espaçamento em dispositivos móveis */
-@media (max-width: 767px) {
+    /* ================= RESPONSIVIDADE FOOTER ================== */
+
     .navbar-brand {
         margin-left: 10px;
     }
 
     .navbar-nav {
         margin-top: 10px;
+    }
+}
+
+/* ================================================================= */
+/* =============== RESPONSIVIDADE TELAS PEQUENAS =================== */
+/* ================================================================= */
+    
+@media (max-width: 480px) {
+
+    /* ===================== RESPONSIVIDADE NAVBAR ===================== */
+    .logo-img {
+        width: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    /* ================== RESPONSIVIDADE HERO HEADER ================== */
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-text-box {
+        width: 90%; 
+        top: 35%; 
+        padding: 10px; 
+    }
+
+    h2 {
+        font-size: 36px; 
+        letter-spacing: 1px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    .carousel-inner {
+        background-color: #1c1c1c;
+        width: 100%;
+        height: auto; 
+        min-height: auto; 
+    }
+
+    #carouselCardapio{
+        width: 100%;
+        height: auto;
+        min-height: auto; 
+    }
+
+    /* ===================== RESPONSIVIDADE MENU ===================== */
+
+    .item-menu {
+        grid-template-columns: 1fr;
     }
 }
